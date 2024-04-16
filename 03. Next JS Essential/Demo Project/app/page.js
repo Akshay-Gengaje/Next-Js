@@ -13,6 +13,7 @@ export default function Home() {
       </h1>
       <p className="text-xl">🔥 Let&apos;s get started! 🔥</p>
       <Link href="/about">About</Link>
+      <Link href="/blog">Blog</Link>
     </main>
   );
 }
