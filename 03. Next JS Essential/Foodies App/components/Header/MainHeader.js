@@ -1,8 +1,12 @@
+"use client";
 import Link from "next/link";
 import logoImg from "@/assets/logo.png";
 import MainHeaderBackground from "./MainHeaderBackground";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import NavLink from "./NavLink";
 const MainHeader = () => {
+  const path = usePathname();
   return (
     <>
       <MainHeaderBackground />
@@ -17,12 +21,12 @@ const MainHeader = () => {
           <span className="text-xl font-semibold mx-2">NextLevel Food</span>
         </Link>
         <nav className="flex-1">
-          <ul className="flex justify-around items-center h-full ">
+          <ul className="flex justify-around items-center h-full font-semibold text-lg">
             <li>
-              <Link href="/">Browse Meals</Link>
+              <NavLink href={"/meals"}>Browse Meals</NavLink>
             </li>
             <li>
-              <Link href="/">Foodies Community</Link>
+              <NavLink href="/community">Foodies Community</NavLink>
             </li>
           </ul>
         </nav>

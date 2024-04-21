@@ -4,13 +4,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <header className="flex items-center justify-between gap-2 px-4 py-8 mx-auto max-w-7xl">
+      <header className="flex items-center justify-around gap-2 px-4 py-8 mx-auto max-w-7xl">
         <div className="w-96">
           <ImageSlideshow />
         </div>
         <div className="flex flex-col space-y-4">
-          <h1 className="text-3xl font-bold text-white uppercase tracking-wide">
-            NextLevel Food for NextLevel Foodies
+          <h1 className="text-3xl font-bold text-white uppercase tracking-wide bg-gradient-to-r from-orange-300 to-orange-600 bg-clip-text text-transparent">
+            NextLevel Food for <br /> NextLevel Foodies
           </h1>
           <p className="text-xl text-gray-300">
             Taste & share food from all over the world.
