@@ -23,7 +23,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
         <div className="text-right">
           <Link
             href={`/meals/${slug}`}
-            className="inline-flex items-center px-4 py-2 rounded-md text-white bg-gradient-to-r from-orange-500 to-orange-700 hover:bg-gradient-to-r from-orange-600 to-orange-800"
+            className="inline-flex items-center px-4 py-2 rounded-md text-white bg-gradient-to-r from-orange-500 to-orange-700 hover:bg-gradient-to-r hover:from-orange-600 hover:to-orange-800"
           >
             View Details
           </Link>
